@@ -1,56 +1,89 @@
-body {margin: 0 auto;}
-main {width:70%;
+body {
 	margin: 0 auto;
+	background-image:url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+main {width:100%;
+	margin-top: 0%;
+	
 }
 header {
 	width:100%;
-	height:320px;
+	height:100px;
 	text-align: center;
 	color:white;
-	background-image:url("H:/Desktop/Front_End_Project/img/1.jpg");
+	
 }
 #me{ 
-padding:5%;
+padding:2%;
 
 }
 .img-circle {
     border-radius: 50%;
-	width: 8%;
-    height: 15%;	
+	width: 10%;
+    height: 20%;	
 	position:absolute;
-	right: 46%;
-	top: 25%;
+	right: 44%;
+	margin-top: 4%;
 	border: 5px solid #fff;
 	
 }
 ul.nav {
     list-style-type: none;
-    margin: 5%;
+    margin-top: 10%;
     padding: 0;
     overflow: hidden;
-    background-color:#4682B4;
+    
 }
 
-ul.nav li {float: left;}
+ul.nav li {
+	float: left;
+	margin-top:8%;
+	margin-left:10%;                
+
+}
 
 ul.nav li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
+	font-family:Verdana;
+	font-size:18px;
+	font-weight: bold;
+	color:black;
+}
+.container{
+	width:100%;
+	margin:auto;
+	background-color:white;
 }
 
-ul.nav li a:hover:not(.active) {background-color: #5DADE2;}
 
-ul.nav li a.active {background-color: #5DADE2;}
-
-ul.nav li.right {float: right;}
-
+a {
+  text-decoration: none;
+  position: relative;
+  color: red;
+}
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid red;
+  transition: 0.4s;
+}
+a:hover:after {
+  width: 100%;
+}
 @media screen and (max-width: 600px){
     ul.nav li.right, 
     ul.nav li {float: none;}
 }
+
 
 footer {
    position:relative;
@@ -60,8 +93,24 @@ footer {
    background-color:#C0C0C0;
    text-align: center;
 }
-.newspaper {
-	padding:10%;
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+
+table {
+  border-collapse: separate;
+  border-spacing: 80px 0;
+}
+
+td {
+  padding: 10px 0;
+}
+.details{
+	margin-left:10%;
+	
+}
+#col {
+	width:50%;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+
