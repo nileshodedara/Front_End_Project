@@ -171,7 +171,60 @@ th, td {
 
 .right {
   background:#B0C4DE;
-   
-   color:red;
+  color:black;
 }
+.right h1{
+	text-decoration: underline red;
+}
+  input[type=text]{
+    width:80%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+ 
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
+  
+  .inputWithIcon input[type=text]{
+    padding-left:40px;
+  }
+  
+  .inputWithIcon{
+    position:relative;
+  }
+  
+  .inputWithIcon i{
+    position:absolute;
+    left:10%;
+    top:8px;
+    padding:9px 8px;
+    color:#aaa;
+    transition:.3s;
+  }
+  
+  .inputWithIcon input[type=text]:focus + i{
+    color:dodgerBlue;
+  }
+  input[type=submit] {
+    background-color: white; 
+    color: black;
+	width:100px;
+	height:30px;
+    border-radius: 12px;
+	
+   
+}
+
+   input[type=submit]:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+  
 
