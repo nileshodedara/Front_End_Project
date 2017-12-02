@@ -6,6 +6,7 @@ main {width:100%;
 	/* margin-top: 4%; */
 	
 }
+
 header {
 	width:100%;
 	height:4%;
@@ -20,148 +21,28 @@ header {
 #me p{
 	font-size:15px;
 }
+	/* h1 { */
+  /* font-size: 1.25em; */
+  /* text-align: center; */
+  /* background: #444; */
+  /* color: #eee; */
+  /* margin: 0; */
+  /* padding: 0.5em; */
+/* } */
 .img-circle {
     border-radius: 50%;
 	width: 90px;
     height: 100px;	
 	margin:1% auto;
 	display:block;
-	border: 5px solid #fff;
-	
+	border: 5px solid #fff;	
 }
-.navcenter {
-	width:50%;
-	margin:0 auto;
-}
-ul.topnav {
-  list-style-type: none;
- 
-  padding: 0;
-  overflow: hidden;
-  background-color: #0000;
-  color:black;
-
-
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* ul.topnav li a:hover {background-color: #555;} */
-
- ul.topnav li.icon {display: none;} 
-#links{
-	margin-top: 10%;
-	position: relative;
-	margin-left: 18%;
-}
-.container{
+	.tab_container{
 	width:100%;
-	height: 450px;
+	height: 500px;
 	margin:auto;
 	background-color:white;
 }
-
-a {
-  text-decoration: none;
-  position: relative;
-  color: red;
-}
-a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  border-bottom: 2px solid red;
-  transition: 0.4s;
-}
-a:hover:after {
-  width: 100%;
-}
-.intro {
-	padding-top:1%;
-	margin-left: 27%;
-	width:47%;
-    -webkit-column-count: 2; Chrome, Safari, Opera
-    -moz-column-count: 2; Firefox
-    column-count: 2;
-}
-.skill{
-	width:50%;
-	height:400px;
-	margin-left:25%;
-	text-decoration: underline red;
-	color:white;
-	font-weight: bold;
-	padding-bottom:5%;
-}
-.foo {
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin: 0px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  text-align: center;
-}
-
-.foo p{
-	margin-top:45%;
-	font-size:20px;
-	font-family:Verdana;
-}
-.coo {
-  float: left;
-  width: 50%;
-  height: 400px;
-  margin: 0px;
-  text-align: center;
-}
-table{  
-	
-	padding-left:40%;
-}
-footer {
-   position:relative;
-   /* bottom:10px; */
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background-color:#C0C0C0;
-   text-align: center;
-}
-.contact{
-	width:100%;
-	height:400px;
-	
-	color:white;	
-}
-
-
-
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-	
-	body{
-		width:100%;
-		
-	}
 	.intro {
 	padding-top:1%;
 	margin-left: 2%;
@@ -224,21 +105,194 @@ footer {
 	
 	color:white;	
 }
+ .tab_container > input,
+ section {
+  display: none;
+  padding: 1em;
+  clear: both;
+}
 
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+label {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-weight:bold;
+  line-height: 3em;
+ 
+}
+/* hides the tab text but leaves the icons visible: */
+label span {
+  display: none;
+}
+
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4{
+  display: block;
+}
+[id^="tab"]:checked + label {
+ 
+  color: #ff6347;
+}
+[id^="tab"]:checked + label .fa {
+  color: #090;
+}
+
+.tab-content {
+  background: #fff;
+}
+label > .fa {
+  margin-right: 10px;
+  
+}
+
+.tab_container section * {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+
+
+
+@media screen and (min-width:680px) {
+	
+
+.img-circle {
+    border-radius: 50%;
+	width: 90px;
+    height: 100px;	
+	margin:1% auto;
+	display:block;
+	border: 5px solid #fff;
+	
+}
+
+
+h1 {
+    font-size: 2em;
   }
-  ul.topnav.responsive li {
-    float: none;
+  /* shows the tab text and the icons: */
+  label span {
     display: inline;
   }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+  label > .fa {
+  margin-right: 10px;
+  display: none;
+  
+}
+.top{
+	width:100%;
+	
+	background-color:white;
+}
+.tab_container{
+	width:50%;
+	height:450px;
+	margin:auto;
+	background-color:white;
+}
+label {
+  display: block;
+  box-sizing: border-box;
+  float: center;
+  width: 25%;
+  margin-left:auto;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-weight:bold;
+  line-height: 3em;
+ 
+}
+
+.container{
+	width:100%;
+	height: 450px;
+	margin:auto;
+	background-color:white;
+}
+
+.nav {
+  text-decoration: none;
+  position: relative;
+  
+}
+.nav:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid red;
+  transition: 0.4s;
+}
+.nav:hover:after {
+  width: 100%;
+}
+.intro {
+	padding-top:1%;
+	margin-left:2%;
+    -webkit-column-count: 2; Chrome, Safari, Opera
+    -moz-column-count: 2; Firefox
+    column-count: 2;
+}
+.skill{
+	width:50%;
+	height:400px;
+	margin-left:25%;
+	text-decoration: underline red;
+	color:white;
+	font-weight: bold;
+	padding-bottom:5%;
+}
+.foo {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 0px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  text-align: center;
+}
+
+.foo p{
+	margin-top:45%;
+	font-size:20px;
+	font-family:Verdana;
+}
+.coo {
+  float: left;
+  width: 50%;
+  height: 400px;
+  margin: 0px;
+  text-align: center;
+}
+table{  
+	
+	padding-left:40%;
+}
+footer {
+   position:relative;
+   /* bottom:10px; */
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color:#C0C0C0;
+   text-align: center;
+}
+.contact{
+	width:100%;
+	height:400px;
+	
+	color:white;	
+}
+
+
 }
 
 

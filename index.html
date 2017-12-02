@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
 <link rel="stylesheet" 
@@ -19,22 +20,29 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 </header>
 
 <main>
+<div class="top">
+<div class="tab_container">
+<!-- <div class="navcenter"> -->
 
-<div class="container">
-<div class="navcenter">
-<ul class="topnav" id="myTopnav">
+ <input id="tab1" type="radio" name="tabs" checked>
+    <!-- the *label* for the radio button forms the clickable tabs -->
+    <label for="tab1"><i class="fa fa-user"></i><span class="nav">HTML5</span></label>
 
-  <li><a class="active" href="home.html">Home</a></li>
-  <li><a href="aboutme.html">About Me</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
-</ul>
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2"><i class="fa fa-graduation-cap"></i></i><span class="nav">CSS</span></label>
 
-</div>
-<div class="intro">
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3"><i class="fa fa-black-tie"></i><span class="nav">JavaScript</span></label>
+	 <input id="tab4" type="radio" name="tabs">
+    <label for="tab4"><i class="fa fa-grav"></i><span class="nav">JavaScript</span></label>
 
+<!-- </div> -->
+
+ <!-- content for tab 1: HTML5 -->
+    <section id="content1" class="tab-content">
+   
+        
+     <div class="intro">
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
@@ -47,6 +55,50 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
  possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit
  eorum claritatem. Investigationes demonstraverunt lectores legere
  me lius quod ii legunt saepius.
+</div>
+
+     
+
+      
+    </section>
+
+    <!-- content for tab 2: CSS -->
+    <section id="content2" class="tab-content">
+      <header>
+        <h2>CSS</h2>
+      </header>
+
+      <ul>
+        <!-- 5 li tags -->
+      </ul>
+
+      
+    </section>
+
+    <!-- content for tab 3: JavaScript -->
+    <section id="content3" class="tab-content">
+      <header>
+        <h2>JavaScript</h2>
+      </header>
+
+      <dl>
+        <!-- 5 pairs of dt and dd tags -->
+      </dl>
+
+     
+    </section>
+	
+	<section id="content4" class="tab-content">
+      <header>
+        <h2>JavaScript</h2>
+      </header>
+
+      <dl>
+        <!-- 5 pairs of dt and dd tags -->
+      </dl>
+
+     
+    </section>
 </div>
 </div>
 
@@ -129,7 +181,7 @@ nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
      
         <input type="submit" value="SEND" id="submit"/>
        
-      </div>
+  </div>
 </div>
 </div>
 
