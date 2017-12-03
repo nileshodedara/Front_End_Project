@@ -51,6 +51,9 @@ header {
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
+.column {
+        width: 100%;
+    }
 .skill{
 	width:98%;
 	height:210px;
@@ -242,6 +245,21 @@ label {
     -webkit-column-count: 2; Chrome, Safari, Opera
     -moz-column-count: 2; Firefox
     column-count: 2;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 31.33%;
+	padding-left:2%;
+   font-size:.8em;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .skill{
 	width:50%;
