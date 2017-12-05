@@ -1,6 +1,6 @@
 body {
 	margin: 0 auto;
-	background-color:#1D1B1B;
+	background-color:	#4682B4;
 }
 main {width:100%;
 	/* margin-top: 4%; */
@@ -262,18 +262,24 @@ label {
     clear: both;
 }
 .skill{
-	width:50%;
+	width:35%;
 	height:400px;
-	margin-left:25%;
+	margin-left:10%;
 	text-decoration: underline red;
 	color:white;
 	font-weight: bold;
 	padding-bottom:5%;
+	float:left;
+}
+
+.wiki{
+	width:100%;
+	padding-top:2%;
 }
 .foo {
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
   text-align: center;
