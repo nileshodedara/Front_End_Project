@@ -65,8 +65,8 @@ header {
 }
 .foo{
   float: left;
-  width: 75px;
-  height: 75px;
+  width: 20%;
+  height:30%;
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
   text-align: center;
@@ -76,6 +76,7 @@ header {
 	
 	font-size:10px;
 	font-family:Verdana;
+	padding-top:2%;
 }
 .coo {
   /* float: left; */
@@ -160,7 +161,46 @@ label > .fa {
   animation: fadeIn 0.7s ease-in-out;
 }
 
+.container1 {
+    position: relative;
+    width: 100%;
+    float:left;
+    padding-left:2%;
+}
 
+.image {
+  /* opacity: 1; */
+  display: block;
+  width: 10%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: blue;
+  font-size: 16px;
+  padding: 10px ;
+}
 
 
 @media screen and (min-width:680px) {
@@ -175,7 +215,13 @@ label > .fa {
 	border: 5px solid #fff;
 	
 }
-
+.container1 {
+    position: relative;
+    width: 18%;
+    float:left;
+    padding-left:2%;
+	padding-top:4%;
+}
 
 h1 {
     font-size: 2em;
@@ -195,7 +241,7 @@ h1 {
 	background-color:white;
 }
 .tab_container{
-	width:50%;
+	width:60%;
 	height:450px;
 	margin:auto;
 	background-color:white;
@@ -212,15 +258,20 @@ label {
   text-align: center;
   font-weight:bold;
   line-height: 3em;
+   font-size:1.5em;
+ 
  
 }
-
-.container{
-	width:100%;
-	height: 450px;
-	margin:auto;
-	background-color:white;
+.image {
+  
+  display: block;
+  width: 90px;
+  height: 100px;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+
+
 
 .nav {
   text-decoration: none;
@@ -275,11 +326,12 @@ label {
 .wiki{
 	width:100%;
 	padding-top:2%;
+	height:400px;
 }
 .foo {
   float: left;
-  width: 140px;
-  height: 140px;
+  width: 20%;
+  height: 30%;
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
   text-align: center;
@@ -287,7 +339,7 @@ label {
 
 .foo p{
 	margin-top:45%;
-	font-size:20px;
+	font-size:1em;
 	font-family:Verdana;
 }
 .coo {
@@ -308,12 +360,22 @@ footer {
    height:60px;   /* Height of the footer */
    background-color:#C0C0C0;
    text-align: center;
+   margin-top:2%;
+   
 }
 .contact{
 	width:100%;
 	height:400px;
-	
+	margin-top:2%;
 	color:white;	
+}
+footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color:#C0C0C0;
+   text-align: center;
 }
 
 
