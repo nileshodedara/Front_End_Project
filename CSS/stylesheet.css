@@ -115,6 +115,9 @@ footer {
   padding: 1em;
   clear: both;
 }
+.wiki>label{
+	width:100%
+}
 
 label {
   display: block;
@@ -246,6 +249,11 @@ h1 {
 	margin:auto;
 	background-color:white;
 }
+.info #searchForm label{
+	width:100%;
+	
+	text-align:left;
+}
 label {
   display: block;
   box-sizing: border-box;
@@ -258,15 +266,15 @@ label {
   text-align: center;
   font-weight:bold;
   line-height: 3em;
-   font-size:1.5em;
+  font-size:1.5em;
  
  
 }
 .image {
   
   display: block;
-  width: 90px;
-  height: 100px;
+  width: 100px;
+  height: 200px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
