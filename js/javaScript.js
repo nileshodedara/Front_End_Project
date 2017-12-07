@@ -36,10 +36,13 @@ https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&genera
 Request url
 https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
 */
-  cSharp.addEventListener("click", searchLanguage);
+
+  cSharp.addEventListener("click", searchLanguage, false);
   
-  function searchLanguage(lang){
-	  alert(cSharp.innerHTML);
+  function searchLanguage(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = cSharp.innerHTML;
+	  searchWiki();
   }
   
   function gatherData(data) {
@@ -71,7 +74,10 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   }
 
   // the API call is triggered once the user submits a query
-  searchForm.addEventListener("submit", function(ev){
+  searchForm.addEventListener("submit", searchWiki, false);
+  
+  
+  function searchWiki(ev){
     // complete the request url
     let wiki = baseURL + queryBox.value;
     // open a connection to the requested API url
@@ -93,6 +99,6 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
     // clear the search box
     queryBox.value = "";
     ev.preventDefault();
-  }, false);
+  }
 
 }());

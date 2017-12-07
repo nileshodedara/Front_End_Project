@@ -346,11 +346,7 @@ label {
   text-align: center;
 }
 
-.foo p{
-	margin-top:45%;
-	font-size:1em;
-	font-family:Verdana;
-}
+
 .coo {
   float: left;
   width: 50%;
