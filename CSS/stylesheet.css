@@ -164,39 +164,78 @@ label > .fa {
     position: relative;
     width: 100%;
     float:left;
-    padding-left:2%;
-	background: url("../img/cricket.png");
+    padding-left:4%;
 }
- /* .Homer { */
-    /* height:165px; */
-    /* width:140px; */
-    /* background: url('URL-of-static-image'); */
-    /* margin:auto; /*position the [div] on the center*/ */
-  /* } */
-  /*this is the hover event trigger*/
+ 
   .container1:hover {
     cursor:pointer; 
+    
+  }
+ figcaption {
+  box-sizing: border-box;
+  height: 1.8em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(7em);
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+  text-align:center;
+  margin-left:-30%;
+  
+}
+
+/* 
+  These styles are applied to the `figcaption` element when hovering 
+  over the`figure` element. The `transition` property on `figcaption` 
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+.container1:hover figcaption {
+  transform: translateY(7em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+  
+}
+
+  .cricket {
+	background:url("../img/cricket1.png");
+}
+ 
+  .cricket:hover {
+    background:url("../img/cricket.png");
+  }
+  
+  .football {
+	background:url("../img/football1.png");
+}
+ 
+  .football:hover {
     background:url("../img/football.png");
   }
-
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  bottom: 0%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+    .travelling {
+	background:url("../img/travelling1.png");
 }
-
-.text {
+ 
+  .travelling:hover {
+    background:url("../img/travelling.png");
+  }
   
-  color: blue;
-  font-size: 1em;
-  font-weight:bold;
-  
+   .movies {
+	background:url("../img/movies1.png");
 }
+ 
+  .movies:hover {
+    background:url("../img/movies.png");
+  }
+  .music {
+	background:url("../img/music1.png");
+}
+ 
+  .music:hover {
+    background:url("../img/music.png");
+  }
+
 
 
 @media screen and (min-width:680px) {
@@ -212,22 +251,21 @@ label > .fa {
 	
 }
 .container1 {
-    position: relative;
+  
     width: 200px;
 	height: 150px;
 	background-repeat: no-repeat;
-    background-size: 200px 150px;
-    float:left;
-     margin-left:1%; 
+    background-size: 250px 200px;
+    margin-left:2%; 
 	padding-top:4%;
 }
 .container1:hover {
-    cursor:pointer; 
-    background:url("../img/crc.gif");
 	width: 200px;
 	height: 150px;
 	background-repeat: no-repeat;
-    background-size: 200px 150px;
+    background-size: 250px 200px;
+	margin-left:2%; 
+	padding-top:4%;
   }
 
 h1 {
@@ -335,12 +373,12 @@ label {
 }
 .foo {
   float: left;
-  width: 20%;
+  width: 25%;
   height: 30%;
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
   /* display: inline-flex; */
-  padding-top:2em;
+  padding-top:3em;
   align-items: center;
   text-align:center;
 }

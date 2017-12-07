@@ -10,6 +10,13 @@
   let searchForm = document.getElementById("searchForm");
   let demoJSON = document.getElementById("demo");
   let cSharp = document.getElementById("csharp");
+  let Html = document.getElementById("html");
+  let CSS3 = document.getElementById("css3");
+  let JavaScript = document.getElementById("javaScript");
+  let MySQL = document.getElementById("mySQL");
+  let ASP = document.getElementById("asp.net");
+  let Networking = document.getElementById("networking");
+  let UML = document.getElementById("uml");
 
   // constructs the base for the request url
   let baseURL = "https://en.wikipedia.org/w/api.php? \
@@ -22,7 +29,7 @@
                 inprop=url& \
                 exintro& \
                 explaintext& \
-                exsentences=1& \
+                exsentences=2& \
                 exlimit=max& \
                 llprop=url& \
                 lllimit=max& \
@@ -42,6 +49,61 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   function searchLanguage(){
 	  // alert(cSharp.innerHTML);
 	  queryBox.value = cSharp.innerHTML;
+	  searchWiki();
+  }
+  
+   Html.addEventListener("click", searchLanguage2, false);
+  
+  function searchLanguage2(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = Html.innerHTML;
+	  searchWiki();
+  }
+  
+  CSS3.addEventListener("click", searchLanguage3, false);
+  
+  function searchLanguage3(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = CSS3.innerHTML;
+	  searchWiki();
+  }
+  
+  JavaScript.addEventListener("click", searchLanguage4, false);
+  
+  function searchLanguage4(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = JavaScript.innerHTML;
+	  searchWiki();
+  }
+  MySQL.addEventListener("click", searchLanguage5, false);
+  
+  function searchLanguage5(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = MySQL.innerHTML;
+	  searchWiki();
+  }
+  
+  ASP.addEventListener("click", searchLanguage6, false);
+  
+  function searchLanguage6(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = ASP.innerHTML;
+	  searchWiki();
+  }
+  
+   Networking.addEventListener("click", searchLanguage7, false);
+  
+  function searchLanguage7(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = Networking.innerHTML;
+	  searchWiki();
+  }
+  
+   UML.addEventListener("click", searchLanguage8, false);
+  
+  function searchLanguage8(){
+	  // alert(cSharp.innerHTML);
+	  queryBox.value = UML.innerHTML;
 	  searchWiki();
   }
   
