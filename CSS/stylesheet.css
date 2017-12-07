@@ -169,16 +169,20 @@ label > .fa {
     width: 100%;
     float:left;
     padding-left:2%;
+	background: url("../img/cricket.png");
 }
+ /* .Homer { */
+    /* height:165px; */
+    /* width:140px; */
+    /* background: url('URL-of-static-image'); */
+    /* margin:auto; /*position the [div] on the center*/ */
+  /* } */
+  /*this is the hover event trigger*/
+  .container1:hover {
+    cursor:pointer; 
+    background:url("../img/football.png");
+  }
 
-.image {
-  /* opacity: 1; */
-  display: block;
-  width: 10%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
 
 .middle {
   transition: .5s ease;
@@ -188,14 +192,6 @@ label > .fa {
   left: 55%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
-}
-
-.container1:hover .image {
-  opacity: 0.3;
-}
-
-.container1:hover .middle {
-  opacity: 1;
 }
 
 .text {
@@ -221,11 +217,22 @@ label > .fa {
 }
 .container1 {
     position: relative;
-    width: 16%;
+    width: 200px;
+	height: 150px;
+	background-repeat: no-repeat;
+    background-size: 200px 150px;
     float:left;
-    padding-left:4%;
+     margin-left:1%; 
 	padding-top:4%;
 }
+.container1:hover {
+    cursor:pointer; 
+    background:url("../img/crc.gif");
+	width: 200px;
+	height: 150px;
+	background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
 
 h1 {
     font-size: 2em;
@@ -245,7 +252,7 @@ h1 {
 	background-color:white;
 }
 .tab_container{
-	width:70%;
+	width:80%;
 	height:450px;
 	margin:auto;
 	background-color:white;
@@ -271,15 +278,6 @@ label {
  
  
 }
-.image {
-  
-  display: block;
-  width: 100px;
-  height: 200px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
 
 
 .nav {
