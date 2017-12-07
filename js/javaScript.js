@@ -9,6 +9,7 @@
   let queryBox = document.getElementById("wikiQuery");
   let searchForm = document.getElementById("searchForm");
   let demoJSON = document.getElementById("demo");
+  let cSharp = document.getElementById("csharp");
 
   // constructs the base for the request url
   let baseURL = "https://en.wikipedia.org/w/api.php? \
@@ -16,7 +17,7 @@
                 action=query& \
                 generator=search& \
                 gsrnamespace=0& \
-                gsrlimit=10& \
+                gsrlimit=1& \
                 prop=info|extracts|langlinks|pageimages& \
                 inprop=url& \
                 exintro& \
@@ -35,7 +36,12 @@ https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&genera
 Request url
 https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
 */
-
+  cSharp.addEventListener("click", searchLanguage);
+  
+  function searchLanguage(lang){
+	  alert(cSharp.innerHTML);
+  }
+  
   function gatherData(data) {
     // console.log(data);
     // initialise some variables
@@ -59,7 +65,7 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
           langLinks += `<a href=${tmp.langlinks[k].url}>${tmp.langlinks[k].lang}</a> `;
         }
       }
-      theData += `<li>${img} ${title} ${extract} <span class="langs">${langLinks}</span></li>`;
+      theData += `<p> ${title} ${extract} </p>`;
     }
     demoJSON.innerHTML = theData;
   }
