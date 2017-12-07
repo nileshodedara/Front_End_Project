@@ -64,6 +64,7 @@ header {
 	padding-bottom:5%;
 }
 .foo{
+  box-sizing:border-box;
   float: left;
   width: 20%;
   height:30%;
@@ -72,12 +73,7 @@ header {
   text-align: center;
 }
 
-.foo p{
-	
-	font-size:10px;
-	font-family:Verdana;
-	padding-top:2%;
-}
+
 .coo {
   /* float: left; */
   width: 100%;
@@ -343,7 +339,10 @@ label {
   height: 30%;
   margin: 0px;
   border: 1px solid rgba(0, 0, 0, .2);
-  text-align: center;
+  /* display: inline-flex; */
+  padding-top:2em;
+  align-items: center;
+  text-align:center;
 }
 
 
