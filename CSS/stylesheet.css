@@ -53,10 +53,10 @@ header {
 }
 .column {
         width: 100%;
-		line-height: .5em;
+		line-height: 1.5em;
         margin-left: 5%;
         font-size: 0.8em;
-		padding-top:1%;
+		padding-top:2%;
     }
 	.title{
 		color:#1E90FF;
