@@ -91,14 +91,7 @@ table{
 	
 	padding-left:0%;
 }
-footer {
-   position:relative;
-   bottom:0px;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background-color:#C0C0C0;
-   text-align: center;
-}
+
 .contact{
 	width:100%;
 	height:700px;
@@ -235,6 +228,113 @@ label > .fa {
   .music:hover {
     background:url("../img/music.png");
   }
+  
+  footer {
+  
+   bottom:0;
+   width:100%;
+   background-color:#C0C0C0;
+   
+   margin-top:4%;
+}
+  a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+.social-icon > h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+	margin-right:5%;
+	padding-bottom:2%;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background-color: #900C3F;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
 
 
 
@@ -395,30 +495,14 @@ table{
 	
 	padding-left:40%;
 }
-footer {
-   position:relative;
-   /* bottom:10px; */
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background-color:#C0C0C0;
-   text-align: center;
-   margin-top:2%;
-   
-}
+
 .contact{
 	width:100%;
 	height:400px;
 	margin-top:2%;
 	color:white;	
 }
-footer {
-   position:relative;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background-color:#C0C0C0;
-   text-align: center;
-}
+
 
 
 
