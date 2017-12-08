@@ -29,7 +29,7 @@
                 inprop=url& \
                 exintro& \
                 explaintext& \
-                exsentences=2& \
+                exsentences=1& \
                 exlimit=max& \
                 llprop=url& \
                 lllimit=max& \
