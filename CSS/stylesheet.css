@@ -24,14 +24,7 @@ header {
 #me p{
 	font-size:15px;
 }
-	/* h1 { */
-  /* font-size: 1.25em; */
-  /* text-align: center; */
-  /* background: #444; */
-  /* color: #eee; */
-  /* margin: 0; */
-  /* padding: 0.5em; */
-/* } */
+
 .img-circle {
     border-radius: 50%;
 	width: 90px;
@@ -40,12 +33,14 @@ header {
 	display:block;
 	border: 5px solid #fff;	
 }
+
 	.tab_container{
 	width:100%;
 	height: 500px;
 	margin:auto;
 	background-color:white;
 }
+
 	.intro {
 	padding-top:1%;
 	margin-left: 2%;
@@ -54,6 +49,7 @@ header {
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
+
 .info label{
 	float:left;
 	text-decoration:none;
@@ -66,7 +62,7 @@ header {
     width: 50%;
     border: 2px solid #aaa;
     border-radius: 4px;
-    margin-left: 4px;
+    margin-left: 16px;
     outline: none;
     box-sizing: border-box;
     transition: .3s;
@@ -74,10 +70,20 @@ header {
 .column {
         width: 100%;
 		line-height: 1.5em;
-        margin-left: 5%;
+        margin-left: 3%;
         font-size: 0.8em;
 		padding-top:2%;
     }
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 	.title{
 		color:#1E90FF;
 	}
@@ -88,10 +94,10 @@ header {
 	width:98%;
 	height:210px;
 	margin-left:1%;
-	/* text-decoration:underline-red; */
 	color:white;
-	font-weight: bold;
+	font-weight: bold;	
 }
+
 .rd{text-decoration:underline red;}
 .foo{
   box-sizing:border-box;
@@ -100,6 +106,7 @@ header {
   height:35%;
   margin: 0px;
   padding-top:1.7em;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, .2);
   text-align: center;
 }
@@ -183,10 +190,13 @@ label > .fa {
 .tab_container section * {
   animation: fadeIn 0.7s ease-in-out;
 }
-
+.wiki{
+	width:100%;
+	padding-top:2%;
+	height:400px;
+}
 .container1 {
-	float:left;
-  
+	float:left; 
     width: 150PX;
 	height: 100px;
 	background-repeat: no-repeat;
@@ -265,7 +275,91 @@ label > .fa {
   .music:hover {
     background:url("../img/music.png");
   }
+
+  .blue {
+  background:#B0C4DE;
+   
+   color:blue;
+}
+
+.white {
+  background:#FFFFFF;
+   
+   color:red;
+}
+
+
+.left {
+  background:#1A5276; 
+   color:#FFFFFF;
+}
+.left h1{
+	text-decoration: underline red;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: left;   
+    border-collapse: collapse;	
+}
+
+.right {
+  background:#B0C4DE;
+  color:black;
+}
+.right h1{
+	text-decoration: underline red;
+}
+  input[type=text]{
+    width:80%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+ 
+  input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  }
   
+  .inputWithIcon input[type=text]{
+    padding-left:40px;
+  }
+  
+  .inputWithIcon{
+    position:relative;
+  }
+  
+  .inputWithIcon i{
+    position:absolute;
+    left:10%;
+    top:8px;
+    padding:9px 8px;
+    color:#aaa;
+    transition:.3s;
+  }
+  
+  .inputWithIcon input[type=text]:focus + i{
+    color:dodgerBlue;
+  }
+  input[type=submit] {
+    background-color: white; 
+    color: black;
+	width:100px;
+	height:30px;
+    border-radius: 12px;
+   
+}
+
+   input[type=submit]:hover {
+    background-color: #1E90FF;
+    color: white;
+}
   footer {
   
    bottom:0;
@@ -371,43 +465,9 @@ ul.social-icons {
 .fa-linkedin:hover {
     background-color: #0073a4;
 }
-
-
-
-
-@media screen and (min-width:1000px) {
+@media screen and (min-width:700px) {
 	
 
-.img-circle {
-    border-radius: 50%;
-	width: 90px;
-    height: 100px;	
-	margin:1% auto;
-	display:block;
-	border: 5px solid #fff;
-	
-}
-.container1 {
-  
-    width: 200px;
-	height: 150px;
-	background-repeat: no-repeat;
-    background-size: 250px 200px;
-    margin-left:2%; 
-	padding-top:4%;
-}
-.container1:hover {
-	width: 200px;
-	height: 150px;
-	background-repeat: no-repeat;
-    background-size: 250px 200px;
-	margin-left:2%; 
-	padding-top:4%;
-  }
-
-h1 {
-    font-size: 2em;
-  }
   /* shows the tab text and the icons: */
   label span {
     display: inline;
@@ -417,21 +477,33 @@ h1 {
   display: none;
   
 }
-.top{
-	width:100%;
 	
+	
+	
+	}
+
+
+
+@media screen and (min-width:900px) {
+.top{
+	width:100%;	
 	background-color:white;
-}
-.tab_container{
+	}
+h1 {
+    font-size: 2em;
+  }
+.tab_container {
 	width:80%;
 	height:450px;
-	margin:auto;
-	background-color:white;
 }
-.info #searchForm label{
-	width:100%;
-	
-	text-align:left;
+
+  /* shows the tab text and the icons: */
+label span {
+    display: inline;
+}
+label > .fa {
+  margin-right: 10px;
+  display: none;  
 }
 label {
   display: block;
@@ -445,12 +517,8 @@ label {
   text-align: center;
   font-weight:bold;
   line-height: 3em;
-  font-size:1.5em;
- 
- 
+  font-size:1.5em; 
 }
-
-
 .nav {
   text-decoration: none;
   position: relative;
@@ -468,66 +536,48 @@ label {
 .nav:hover:after {
   width: 100%;
 }
-.intro {
-	padding-top:1%;
-	margin-left:5%;
-    -webkit-column-count: 2; Chrome, Safari, Opera
-    -moz-column-count: 2; Firefox
-    column-count: 2;
-}
-/* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 28%;
-	padding-left:5%;
-   font-size:.8em;
-    
+	padding-left:2%;
+   font-size:.8em;    
 }
-
-.year{color:#B0C4DE;}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.container1 {
+    width: 200px;
+	height: 150px;
+    background-size: 200px 200px;
+    margin-left:2%; 
+	padding-top:4%;
+}
+.container1:hover {
+	width: 200px;
+	height: 150px;
+	background-repeat: no-repeat;
+    background-size: 200px 200px;
+	margin-left:2%; 
+	padding-top:4%;
 }
 .skill{
 	width:35%;
 	height:400px;
 	margin-left:10%;
-	text-decoration: underline red;
-	color:white;
-	font-weight: bold;
 	padding-bottom:5%;
 	float:left;
 }
 
-.wiki{
-	width:100%;
-	padding-top:2%;
-	height:400px;
-}
 .foo {
-  float: left;
   width: 25%;
   height: 30%;
-  margin: 0px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  /* display: inline-flex; */
   padding-top:3em;
-  align-items: center;
-  text-align:center;
 }
-
-
 .coo {
   float: left;
   width: 50%;
   height: 400px;
   margin: 0px;
-  text-align: center;
 }
+
+
 table{  
 	
 	padding-left:40%;
@@ -539,102 +589,9 @@ table{
 	margin-top:2%;
 	color:white;	
 }
-
-
-
-
 }
 
 
-
-
-
-
-
-.blue {
-  background:#B0C4DE;
-   
-   color:blue;
-}
-
-.white {
-  background:#FFFFFF;
-   
-   color:red;
-}
-
-
-.left {
-  background:#1A5276; 
-   color:#FFFFFF;
-}
-.left h1{
-	text-decoration: underline red;
-}
-
-
-th, td {
-    padding: 10px;
-    text-align: left;   
-    border-collapse: collapse;	
-}
-
-.right {
-  background:#B0C4DE;
-  color:black;
-}
-.right h1{
-	text-decoration: underline red;
-}
-  input[type=text]{
-    width:80%;
-    border:2px solid #aaa;
-    border-radius:4px;
-    margin:8px;
-    outline:none;
-    padding:8px;
-    box-sizing:border-box;
-    transition:.3s;
-  }
- 
-  input[type=text]:focus{
-    border-color:dodgerBlue;
-    box-shadow:0 0 8px 0 dodgerBlue;
-  }
-  
-  .inputWithIcon input[type=text]{
-    padding-left:40px;
-  }
-  
-  .inputWithIcon{
-    position:relative;
-  }
-  
-  .inputWithIcon i{
-    position:absolute;
-    left:10%;
-    top:8px;
-    padding:9px 8px;
-    color:#aaa;
-    transition:.3s;
-  }
-  
-  .inputWithIcon input[type=text]:focus + i{
-    color:dodgerBlue;
-  }
-  input[type=submit] {
-    background-color: white; 
-    color: black;
-	width:100px;
-	height:30px;
-    border-radius: 12px;
-   
-}
-
-   input[type=submit]:hover {
-    background-color: #1E90FF;
-    color: white;
-}
 
 
   
