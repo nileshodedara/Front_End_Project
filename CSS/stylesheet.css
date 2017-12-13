@@ -119,8 +119,6 @@ label > .fa {margin-right: 10px;}
 	padding-top:1%;
 	margin-left: 2%;
 	width:95%;
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
 
@@ -387,7 +385,6 @@ label > .fa {
 label {
   display: block;
   box-sizing: border-box;
-  float: center;
   width: 25%;
   margin-left:auto;
   color: #000;
@@ -442,7 +439,7 @@ label {
 	width:100%;
 	height:700px;	
 	color:white;	
-	font-size:1.1;
+	font-size:1.1em;
 }
 table{padding-left:30%;}
 /* 
@@ -489,46 +486,91 @@ h1 {
     margin-left:3%; 
 	padding-top:4%;
 }
-.container1:hover {
-	width: 250px;
-	height: 200px;
+.sport {
+	float:left;
+    width:18%;
+	height:200px;
 	background-repeat: no-repeat;
-    background-size: 250px 200px;
-	margin-left:3%; 
-	padding-top:4%;
+	background-position: center;
+	margin-left:2%;
 }
 
-  .cricket:hover {
-    background:url("../img/cricket.png");
-  }
+.cricket {
+    background:url("../img/cricket1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
   
+.cricket:hover {
+	background: url("../img/cricket.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
 
- 
-  .football:hover {
-    background:url("../img/football.png");
-  }
-
- 
-  .travelling:hover {
-    background:url("../img/travelling.png");
-  }
+.football {
+    background:url("../img/football1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
   
+.football:hover {
+	background: url("../img/football.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
+  
+.travelling {
+    background:url("../img/travelling1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
+  
+.travelling:hover {
+	background: url("../img/travelling.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
 
- 
-  .movies:hover {
-    background:url("../img/movies.png");
-  }
+.movies {
+    background:url("../img/movies1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
+  
+.movies:hover {
+	background: url("../img/movies.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
 
- 
-  .music:hover {
-    background:url("../img/music.png");
-  }
- figcaption {
+.music {
+    background:url("../img/music1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
+  
+.music:hover {
+	background: url("../img/music.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 200px;
+}
+
+ .figcaption {
   box-sizing: border-box;
   height: 1.8em;
   line-height: 1.2em;
   padding: .25em;
-  transform: translateY(7em);
+  transform: translateY(12em);
   background: #fff;
   /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
@@ -541,8 +583,8 @@ h1 {
   over the`figure` element. The `transition` property on `figcaption` 
   above is then applied to `all` these hover styles, over 0.5 seconds.
 */
-.container1:hover figcaption {
-  transform: translateY(7em);
+.sport:hover .figcaption {
+  transform: translateY(12em);
   /* background: rgba( 255, 255, 255, .78 ); */
   opacity: .78; 
 }
