@@ -43,11 +43,12 @@ https://en.wikipedia.org/wiki/Special:ApiSandbox#action=query&format=json&genera
 Request url
 https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&prop=extracts%7Clanglinks%7Cpageimages&gsrlimit=10&gsrnamespace=0&exintro&explaintext&exsentences=1&exlimit=max&llprop=url&lllimit=max&piprop=thumbnail|name&origin=*&gsrsearch=kittens
 */
-
+	
   cSharp.addEventListener("click", searchLanguage, false);
   
   function searchLanguage(){
 	  // alert(cSharp.innerHTML);
+	  console.log(queryBox.value);
 	  queryBox.value = cSharp.innerHTML;
 	  searchWiki();
   }
@@ -136,10 +137,10 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   }
 
   // the API call is triggered once the user submits a query
-  searchForm.addEventListener("submit", searchWiki, false);
+  searchForm.addEventListener("submit", searchWikiSubmit, false);
   
   
-  function searchWiki(ev){
+  function searchWiki(){
     // complete the request url
     let wiki = baseURL + queryBox.value;
     // open a connection to the requested API url
@@ -160,7 +161,31 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
     };
     // clear the search box
     queryBox.value = "";
-    ev.preventDefault();
+
+  }
+  
+  function searchWikiSubmit(ev){
+    // complete the request url
+    let wiki = baseURL + queryBox.value;
+    // open a connection to the requested API url
+    xhr.open("GET", wiki, true);
+    // be polite to Wikipedia
+    xhr.setRequestHeader('Api-User-Agent', 'Example/1.0');
+    // send off that request
+    xhr.send();
+    // if the response was ok, handle the response data using the gatherData function
+    xhr.onreadystatechange = function() {
+      // console.log(`Current readyState: ${xhr.readyState}`);
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        // parse the response JSON
+        let response = JSON.parse(xhr.responseText);
+        // deal with the parsed JSON data
+        gatherData(response);
+      }
+    };
+    // clear the search box
+    queryBox.value = "";
+	ev.preventDefault();
   }
 
 }());

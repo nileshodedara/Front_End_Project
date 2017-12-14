@@ -89,6 +89,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #1E90FF;
     color: white;
+	cursor:pointer;
 }
 .tab_container > input, section {
     display: none;
@@ -140,31 +141,67 @@ label > .fa {margin-right: 10px;}
 
 .year{color:#B0C4DE;}
 
-.container1 {
-	float:left; 
-    width: 150px ;
-	height: 100px ;
+.sport {
+	float:left;
+    width:25%;
+	height:100px;
 	background-repeat: no-repeat;
-	background-size:150px 150px;
-	padding-top:2%;
+	background-position: center;
+	margin-left:5%;
+	padding-top:9%;
+	
 }
 
-.cricket {background:url("../img/cricket1.png");}
+.cricket {
+    background:url("../img/cricket1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100px;
+}
   
-.football {background:url("../img/football1.png");}
- 
-.travelling {background:url("../img/travelling1.png");}
-  
-.movies {background:url("../img/movies1.png");}
-  
-.music {background:url("../img/music1.png");}
 
-figcaption {
+
+.football {
+    background:url("../img/football1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100px;
+}
+  
+
+  
+.travelling {
+    background:url("../img/travelling1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100px;
+}
+
+
+.movies {
+    background:url("../img/movies1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100px;
+}
+  
+
+
+.music {
+    background:url("../img/music1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100px;
+}
+  
+
+
+.figcaption {
     box-sizing: border-box;
     height: 1.8em;
     line-height: 1.2em;
     padding: .25em;
-    transform: translateY(7em);
+    transform: translateY(5em);
     background: #fff;
     opacity: 0.78;
     transition: all .5s;
@@ -197,6 +234,26 @@ figcaption {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, .2);
     text-align: center;
+	cursor:pointer
+}
+
+.foo:hover
+{
+    box-shadow: 0px 0px 100px #000000;
+    z-index: 1;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 100ms ease-in;
+    transform: scale(1.1);
+}
+#demo{
+	background-color:white;
+	color:black;
+	padding:1em;
 }
 
 .rd{text-decoration:underline red;}
@@ -204,11 +261,13 @@ figcaption {
 .blue {
     background:#B0C4DE;  
     color:blue;
+	
 }
 
 .white {
     background:#FFFFFF;
     color:red;
+	
 }
 
 
@@ -233,7 +292,7 @@ figcaption {
 .contact{
 	width:100%;
 	height:700px;	
-	color:white;	
+
 }
 
 .coo {
@@ -241,6 +300,7 @@ figcaption {
     height: 300px;
     margin: 0px;
     text-align: center;
+	
 }
 
 .left {
@@ -249,6 +309,7 @@ figcaption {
     text-align: center;
     background:#1A5276; 
     color:#FFFFFF;
+	clear:both;
 }
 
 .right {
@@ -413,16 +474,6 @@ label {
   width: 100%;
 }
 
-.container1 {
-	float:left; 
-    width: 200px;
-	height: 200px;
-	background-repeat: no-repeat;
-    background-size: 200px 200px;
-	padding-top:4%;
-	margin-left:5%;
-}
-
  figcaption {
   box-sizing: border-box;
   height: 1.8em;
@@ -478,14 +529,7 @@ h1 {
 	padding-left:2%;
    font-size:.8em;    
 }
-.container1 {
-    width: 250px;
-	height: 200px;
-	background-repeat: no-repeat;
-    background-size: 250px 200px;
-    margin-left:3%; 
-	padding-top:4%;
-}
+
 .sport {
 	float:left;
     width:18%;
@@ -570,7 +614,7 @@ h1 {
   height: 1.8em;
   line-height: 1.2em;
   padding: .25em;
-  transform: translateY(12em);
+  transform: translateY(7em);
   background: #fff;
   /* background: rgba( 255, 255, 255, 0 ); */
   opacity: 0;
@@ -584,7 +628,7 @@ h1 {
   above is then applied to `all` these hover styles, over 0.5 seconds.
 */
 .sport:hover .figcaption {
-  transform: translateY(12em);
+  transform: translateY(6em);
   /* background: rgba( 255, 255, 255, .78 ); */
   opacity: .78; 
 }
