@@ -181,19 +181,23 @@
                 </div>
                 <div class="coo right">
                     <h1>CONTACT ME</h1>
-                    <div class="inputWithIcon">
-                        <input type="text" placeholder="Your name">
+					<form id="contact" action="" method="post">
+                    <fieldset class="inputWithIcon">
+                        <input type="text" placeholder="Your name" required>
                         <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                    </div>
-                    <div class="inputWithIcon">
-                        <input type="text" placeholder="Email">
+                    </fieldset>
+                    <fieldset class="inputWithIcon">
+                        <input type="email" placeholder="Email" required>
                         <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
-                    </div>
-                    <div class="inputWithIcon">
-                        <input type="text" placeholder="Your text">
+                    </fieldset>
+                    <fieldset class="inputWithIcon">
+                        <input type="text" id="text-area" placeholder="Your text" required>
                         <i class="fa fa-pencil fa-lg fa-fw" aria-hidden="true"></i>
-                    </div>
+                    </fieldset>
+					<fieldset>
                         <input type="submit" value="SEND" id="submit"/>
+						</fieldset>
+					</form>
                 </div>
             </div>
         </main>
