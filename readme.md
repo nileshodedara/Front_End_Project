@@ -83,11 +83,11 @@ Fixed Erros
 
 <img src="https://user-images.githubusercontent.com/23102407/34417688-abf6965a-ebf1-11e7-846d-c062f5567216.PNG" width="500px" alt="html validation fiex">
 
-#### 8. Javascript Validation
+#### 9. Javascript Validation
 there were no error in the javascript as you can see below:
 <img src="https://user-images.githubusercontent.com/23102407/34415351-1be89eec-ebe6-11e7-8963-28cf1296905c.PNG" width="500px" alt="html validation fiex">
 
-#### 13. References
+#### 10. References
 
  * animations and transitions 
  https://www.w3schools.com/css/css3_animations.asp
@@ -106,8 +106,7 @@ there were no error in the javascript as you can see below:
 
  
  
- 
- add
+
  
  
  
