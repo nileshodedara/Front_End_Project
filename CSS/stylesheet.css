@@ -1,10 +1,11 @@
+/* this style applies to the entire body of the website*/
 body {
 	margin: 0 auto;
 	background-color:#4682B4;
 	font-size:15px;
 }
-/* this style applies to mobile screens */
 
+/*text size for the h1 text */
 h1{font-size:1.5em;}
 
 header {
@@ -18,7 +19,7 @@ header {
 #me h1{font-size:20px;}
 
 #me p{font-size:15px;}
-
+/*this styles applies to the profile image  */
 .img-circle {
     border-radius: 50%;
 	width: 90px;
@@ -27,90 +28,29 @@ header {
 	display:block;
 	border: 5px solid #fff;	
 }
+
 main {width:100%;}
 
+/*this styles applies to the navigation and profile section */
 .tab_container{
 	width:100%;
 	height: 500px;
 	margin:auto;
 	background-color:white;
 }
-fieldset {
-	border: medium none;
-	margin: 0 0 10px;
-	min-width: 100%;
-	padding: 0;
-	width: 100%;
-}
-#text-area{
-	height:50px;
-}
-input[type=text],[type=email]{
-    width:80%;
-    border:2px solid #aaa;
-    border-radius:4px;
-    margin:8px;
-    outline:none;
-    padding:8px;
-    box-sizing:border-box;
-    transition:.3s;
-}
-label {
-    display: block;
-    box-sizing: border-box;
-    float: left;
-    width: 25%;
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    font-weight:bold;
-    line-height: 3em;
-}
- 
-input[type=text]:focus{
-    border-color:dodgerBlue;
-    box-shadow:0 0 8px 0 dodgerBlue;
-}
-  
-.inputWithIcon input[type=text],[type=email]{padding-left:40px;}
-  
-.inputWithIcon{position:relative;}
-  
-.inputWithIcon i{
-    position:absolute;
-    left:10%;
-    top:8px;
-    padding:9px 8px;
-    color:#aaa;
-    transition:.3s;
-}
-  
-.inputWithIcon input[type=text]:focus + i{color:dodgerBlue;}
-  
-input[type=submit] {
-    background-color: white; 
-    color: black;
-    width:100px;
-    height:30px;
-    border-radius: 12px;
-}
 
-input[type=submit]:hover {
-    background-color: #1E90FF;
-    color: white;
-	cursor:pointer;
-}
 .tab_container > input, section {
     display: none;
     padding: 1em;
     clear: both;
 }
+
 .tab_container section * {animation: fadeIn 0.7s ease-in-out;}
 
 /* hides the tab text but leaves the icons visible: */
 label span {display: none;}
 
+/*display the content associated with the tab */
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
@@ -118,14 +58,14 @@ label span {display: none;}
   display: block;
 }
 
+/*chanchesthe background-color of the checked tab  */
 [id^="tab"]:checked + label { color: #ff6347;}
 
 [id^="tab"]:checked + label .fa {color: #090;}
 
 .tab-content {background: #fff;}
 
-label > .fa {margin-right: 10px;}
-
+/* display the introduction text in 2 columns*/
 .intro {
 	padding-top:1%;
 	margin-left: 2%;
@@ -147,10 +87,12 @@ label > .fa {margin-right: 10px;}
     clear: both;
 }
 
+/*light blues background-color for the cours title and the year*/
 .title{color:#1E90FF;}
 
 .year{color:#B0C4DE;}
 
+/*this styles applies to the hobby section displys background-image */
 .sport {
 	float:left;
     width:25%;
@@ -158,8 +100,7 @@ label > .fa {margin-right: 10px;}
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-left:5%;
-	padding-top:9%;
-	
+	padding-top:9%;	
 }
 
 .cricket {
@@ -169,24 +110,19 @@ label > .fa {margin-right: 10px;}
 	background-size: 100% 100px;
 }
   
-
-
 .football {
     background:url("../img/football1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100px;
 }
-  
-
-  
+   
 .travelling {
     background:url("../img/travelling1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100px;
 }
-
 
 .movies {
     background:url("../img/movies1.png");
@@ -195,17 +131,13 @@ label > .fa {margin-right: 10px;}
 	background-size: 100% 100px;
 }
   
-
-
 .music {
     background:url("../img/music1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100px;
 }
-  
-
-
+ /* displys appropiate text with the hobby image*/ 
 .figcaption {
     box-sizing: border-box;
     height: 1.8em;
@@ -218,6 +150,7 @@ label > .fa {margin-right: 10px;}
     text-align:center;  
 }
 
+/*this styles applies to the skill and wiki area */
 .wiki{
 	width:100%;
 	padding-top:2%;
@@ -226,6 +159,31 @@ label > .fa {margin-right: 10px;}
 
 .wiki>label{width:100%;}
 
+.info label{
+	float:left;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:2.5em;	
+}
+
+.info input[type=text] {
+    width: 40%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin-left: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+/*wiki result display field*/
+#demo{
+	background-color:white;
+	color:black;
+	padding:1em;
+}
+
+/*this styles applies to skill area*/
 .skill{
 	width:98%;
 	height:210px;
@@ -233,7 +191,6 @@ label > .fa {margin-right: 10px;}
 	color:white;
 	font-weight: bold;	
 }
-
 .foo{
     box-sizing:border-box;
     float: left;
@@ -246,7 +203,7 @@ label > .fa {margin-right: 10px;}
     text-align: center;
 	cursor:pointer
 }
-
+/*this style generates hoover over transition that zoomz in when user hoover overs a skill area*/
 .foo:hover
 {
     box-shadow: 0px 0px 100px #000000;
@@ -254,57 +211,30 @@ label > .fa {margin-right: 10px;}
     transition: all 100ms ease-in;
     transform: scale(1.1);
 }
-#demo{
-	background-color:white;
-	color:black;
-	padding:1em;
-}
 
 .rd{text-decoration:underline red;}
 
+/*skill names are displayed in two diffrent background*/
 .blue {
     background:#B0C4DE;  
-    color:blue;
-	
+    color:blue;	
 }
 
 .white {
     background:#FFFFFF;
-    color:red;
-	
+    color:red;	
 }
 
-
-.info label{
-	float:left;
-	text-decoration:none;
-	font-weight:bold;
-	line-height:2.5em;
-	width: 13%;
-}
-
-.info input[type=text] {
-    width: 50%;
-    border: 2px solid #aaa;
-    border-radius: 4px;
-    margin-left: 16px;
-    outline: none;
-    box-sizing: border-box;
-    transition: .3s;
-}
-
+/*this styles applies to contact me section*/
 .contact{
 	width:100%;
 	height:700px;	
-
 }
-
 .coo {
     width: 100%;
     height: 300px;
     margin: 0px;
-    text-align: center;
-	
+    text-align: center;	
 }
 
 .left {
@@ -317,8 +247,8 @@ label > .fa {margin-right: 10px;}
 }
 
 .right {
-  background:#B0C4DE;
-  color:black;
+	background:#B0C4DE;
+	color:black;
 }
 
 table{padding-left:0%;}
@@ -331,39 +261,83 @@ th, td {
 
 .coo h1{text-decoration: underline red;}
 
-.footer-sitemap{
-	width:10%;
-	margin-left:5%;
-	display:block;
-	padding-top:2%;
-	position:relative;
-}
-.footer-sitemap ul li{
-	padding-top:2%;
-	
-}
-a:link {
-    text-decoration: none;
-	color:black;
-}
-.site{
-	font-weight:bold;
-	font-size:20px;
-}
-.footer-social-icons {
-    width: 20%;
-    display:block;
-    margin: 0 auto;
-    margin-right:5%;
-    padding-bottom:2%;
-	margin-top:-5%;
-	
-}
-.footer{
-	float:left;
-	display:block;
+fieldset {
+	border: medium none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
 }
 
+#text-area{	height:50px;}
+
+/*this styles applies to input text fields of the contact me form  */
+input[type=text],[type=email]{
+    width:80%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+/*this styles applies to the lables of the contact me form  */
+label {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight:bold;
+    line-height: 3em;
+}
+
+ /*when clicks in a text input field, the border is highlited in blue colour*/
+input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+ 
+/*this styles applies to the font awesome icons of the contact me form  */ 
+.inputWithIcon input[type=text],[type=email]{padding-left:40px;}
+  
+.inputWithIcon{position:relative;}
+  
+.inputWithIcon i{
+    position:absolute;
+    left:10%;
+    top:8px;
+    padding:9px 8px;
+    color:#aaa;
+    transition:.3s;
+}
+  
+.inputWithIcon input[type=text]:focus + i{color:dodgerBlue;}
+ 
+/*this styles applies to the submit button of the contact me form  */ 
+input[type=submit] {
+    background-color: white; 
+    color: black;
+    width:20%;
+    height:30px;
+    border-radius: 12px;
+}
+
+/* when user hoover overs the button the background-color chanches to blue*/
+input[type=submit]:hover {
+    background-color: #1E90FF;
+    color: white;
+	cursor:pointer;
+}
+
+label > .fa {margin-right: 10px;}
+
+/*this styles applies to the footer area  */ 
 footer {
     bottom:0;
     width:100%;
@@ -371,16 +345,41 @@ footer {
     margin-top:4%;
 }
 
-/* a { */
-  /* text-decoration: none; */
-  /* color: #fff; */
-/* } */
+.footer-sitemap{
+	width:10%;
+	margin-left:5%;
+	display:block;
+	padding-top:2%;
+	position:relative;
+}
 
-/* p > a:hover{ */
-  /* color: #d9d9d9; */
-  /* text-decoration:  underline; */
-/* } */
+.footer-sitemap ul li{	padding-top:1%;}
 
+a:link {
+    text-decoration: none;
+	color:black;
+}
+
+.site{
+	font-weight:bold;
+	font-size:20px;
+}
+
+.footer-social-icons {
+    width: 20%;
+    display:block;
+    margin: 0 auto;
+    margin-right:5%;
+    padding-bottom:2%;
+	margin-top:-8%;
+	
+}
+
+.footer{
+	float:left;
+	display:block;
+}
+/*style for displying social media icons using font awesome*/
 .social-icon > h1,
 h2,
 h3,
@@ -396,8 +395,6 @@ ul {
     padding:0;
     list-style: none;
 }
-
-
 
 .social-icon {color: #fff;}
 
@@ -420,6 +417,7 @@ ul.social-icons {margin-top: 10px;}
     background-color: #322f30;
 }
 
+/*changes the background-color when user hover overs an icon*/
 .fa-facebook:hover {background-color: #3d5b99;}
 
 .fa-twitter {
@@ -446,109 +444,96 @@ ul.social-icons {margin-top: 10px;}
 
 .fa-linkedin:hover {background-color: #0073a4;}
 
-@media screen and (min-width:500px) {
-	
-
+/*this styles applies to the mobile screens */ 
+@media screen and (min-width:500px) {	
   /* shows the tab text and the icons: */
-
 .tab_container {
 	width:100%;
 	height:550px;
 }
-.intro{
-	font-size:1.5em;
-}
+
+.intro{	font-size:1.5em;}
 
 .column {
     float: left;
     width: 28%;
 	padding-left:2%;
-   font-size:1.1em;    
+	font-size:1.1em;    
 }
 
   /* shows the tab text and the icons: */
-label span {
-    display: inline;
-}
+label span {display: inline;}
+
 label > .fa {
-  margin-right: 10px;
-  display: none;  
-}
-label {
-  display: block;
-  box-sizing: border-box;
-  width: 25%;
-  margin-left:auto;
-  color: #000;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  font-weight:bold;
-  line-height: 3em;
-  font-size:1.5em; 
-}
-.nav {
-  text-decoration: none;
-  position: relative;
-  
-}
-.nav:after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  border-bottom: 2px solid red;
-  transition: 0.4s;
-}
-.nav:hover:after {
-  width: 100%;
+	margin-right: 10px;
+	display: none;  
 }
 
- figcaption {
-  box-sizing: border-box;
-  height: 1.8em;
-  line-height: 1.2em;
-  padding: .25em;
-  transform: translateY(9em);
-  background: #fff;
-  /* background: rgba( 255, 255, 255, 0 ); */
-  opacity: .78;
-  transition: all .5s;
-  text-align:center;  
+label {
+	display: block;
+	box-sizing: border-box;
+	width: 25%;
+	margin-left:auto;
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	font-weight:bold;
+	line-height: 3em;
+	font-size:1.5em; 
 }
+
+
+.nav {
+	text-decoration: none;
+	position: relative;
+  
+}
+/*displays red underline when hoover overed*/
+.nav:after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0%;
+	border-bottom: 2px solid red;
+	transition: 0.4s;
+}
+
+.nav:hover:after {width: 100%;}
+
+ figcaption {
+	box-sizing: border-box;
+	height: 1.8em;
+	line-height: 1.2em;
+	padding: .25em;
+	transform: translateY(9em);
+	background: #fff;
+	opacity: .78;
+	transition: all .5s;
+	text-align:center;  
+} 
+
 .contact{
 	width:100%;
 	height:700px;	
 	color:white;	
 	font-size:1.1em;
 }
+
 table{padding-left:30%;}
-/* 
-  These styles are applied to the `figcaption` element when hovering 
-  over the`figure` element. The `transition` property on `figcaption` 
-  above is then applied to `all` these hover styles, over 0.5 seconds.
-*/
-
-
-
- 
-
 	
-	
-	
-	}
+}
 
-
-
+/*this styles applies to desktop screens  */ 
 @media screen and (min-width:900px) {
 .top{
 	width:100%;	
 	background-color:white;
-	}
-h1 {
-    font-size: 2em;
-  }
+}
+
+h1 {font-size: 2em;}
+
   .tab_container {
 	width:80%;
 	height:450px;
@@ -558,9 +543,10 @@ h1 {
     float: left;
     width: 28%;
 	padding-left:2%;
-   font-size:.8em;    
+	font-size:.8em;    
 }
 
+/*this style applies to sport section on desktop screen*/
 .sport {
 	float:left;
     width:18%;
@@ -570,13 +556,15 @@ h1 {
 	margin-left:2%;
 }
 
+/*displays a background image*/
 .cricket {
     background:url("../img/cricket1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+ /*displays a gif file when hover overed*/
 .cricket:hover {
 	background: url("../img/cricket.png");
 	background-repeat: no-repeat;
@@ -584,27 +572,31 @@ h1 {
 	background-size: 100% 200px;
 }
 
+/*displays a background image*/
 .football {
     background:url("../img/football1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+ /*displays a gif file when hover overed*/ 
 .football:hover {
 	background: url("../img/football.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+/*displays a background image*/ 
 .travelling {
     background:url("../img/travelling1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+ /*displays a gif file when hover overed*/ 
 .travelling:hover {
 	background: url("../img/travelling.png");
 	background-repeat: no-repeat;
@@ -612,13 +604,15 @@ h1 {
 	background-size: 100% 200px;
 }
 
+/*displays a background image*/
 .movies {
     background:url("../img/movies1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+ /*displays a gif file when hover overed*/ 
 .movies:hover {
 	background: url("../img/movies.png");
 	background-repeat: no-repeat;
@@ -626,42 +620,38 @@ h1 {
 	background-size: 100% 200px;
 }
 
+/*displays a background image*/
 .music {
     background:url("../img/music1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-  
+ 
+ /*displays a gif file when hover overed*/ 
 .music:hover {
 	background: url("../img/music.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 200px;
 }
-
+/*hides caption text*/
  .figcaption {
-  box-sizing: border-box;
-  height: 1.8em;
-  line-height: 1.2em;
-  padding: .25em;
-  transform: translateY(7em);
-  background: #fff;
-  /* background: rgba( 255, 255, 255, 0 ); */
-  opacity: 0;
-  transition: all .5s;
-  text-align:center;  
+	box-sizing: border-box;
+	height: 1.8em;
+	line-height: 1.2em;
+	padding: .25em;
+	transform: translateY(7em);
+	background: #fff;
+	opacity: 0;
+	transition: all .5s;
+	text-align:center;  
 }
 
-/* 
-  These styles are applied to the `figcaption` element when hovering 
-  over the`figure` element. The `transition` property on `figcaption` 
-  above is then applied to `all` these hover styles, over 0.5 seconds.
-*/
+/*displays a caption text on hoover over*/
 .sport:hover .figcaption {
-  transform: translateY(6em);
-  /* background: rgba( 255, 255, 255, .78 ); */
-  opacity: .78; 
+	transform: translateY(6em);
+	opacity: .78; 
 }
 .skill{
 	width:35%;
@@ -672,22 +662,18 @@ h1 {
 }
 
 .foo {
-  width: 25%;
-  height: 30%;
-  padding-top:3em;
+	width: 25%;
+	height: 30%;
+	padding-top:3em;
 }
 .coo {
-  float: left;
-  width: 50%;
-  height: 400px;
-  margin: 0px;
+	float: left;
+	width: 50%;
+	height: 400px;
+	margin: 0px;
 }
 
-
-table{  
-	
-	padding-left:40%;
-}
+table{padding-left:40%;}
 
 .contact{
 	width:100%;
@@ -695,6 +681,7 @@ table{
 	margin-top:2%;
 	color:white;	
 }
+
 }
 
 
