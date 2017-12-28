@@ -72,7 +72,7 @@ With Errors
 
 Fixed Erros
 
-<img src="(https://user-images.githubusercontent.com/23102407/34417664-9001de00-ebf1-11e7-8f78-a7c2175f79d6.PNG" width="500px" alt="html validation fiex">
+<img src="https://user-images.githubusercontent.com/23102407/34417918-00f0fff0-ebf3-11e7-8ca7-e13d8044a743.PNG" width="500px" alt="html validation fiex">
 
 #### 8. CSS Validation
 With Errors
