@@ -64,8 +64,7 @@ in the skill section if a user clicks on any of the langauges then wikipedia wil
 
 Throughout this development cycle, html & css validation was key. 
 Below are some examples of HTML validation where errors were found and then resolved.
-
-I have not supplied a CSS validation as you can see going through the styles.css that there are no syntax errors.
+validation of the HTML and the CSS was very important throught my website devlopment process. Here are some examples of the erros that i faced during the process and i have also provided the evidance of fixed errors.   
 
 With Errors
 
@@ -73,7 +72,7 @@ With Errors
 
 Fixed Erros
 
-<img src="https://i.imgur.com/5Bc6nEz.png" width="500px" alt="html validation fiex">
+<img src="(https://user-images.githubusercontent.com/23102407/34417664-9001de00-ebf1-11e7-8f78-a7c2175f79d6.PNG" width="500px" alt="html validation fiex">
 
 #### 8. CSS Validation
 With Errors
@@ -82,7 +81,7 @@ With Errors
 
 Fixed Erros
 
-<img src="https://i.imgur.com/5Bc6nEz.png" width="500px" alt="html validation fiex">
+<img src="https://user-images.githubusercontent.com/23102407/34417688-abf6965a-ebf1-11e7-846d-c062f5567216.PNG" width="500px" alt="html validation fiex">
 
 #### 8. Javascript Validation
 there were no error in the javascript as you can see below:
