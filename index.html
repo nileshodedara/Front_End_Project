@@ -18,7 +18,7 @@
             </div>
         </header>
         <main>
-            <div class="top">
+            <div class="top" id="profile">
                 <div class="tab_container">
                     <input id="tab1" type="radio" name="tabs" checked>
                     <!-- the *label* for the radio button forms the clickable tabs -->
@@ -123,7 +123,8 @@
                     </section>
                 </div>
             </div>
-            <div class="wiki">
+			
+            <div class="wiki" id="skills">
                 <div class="skill">
                     <h1> <span class="rd">SKILLS</span></h1>
                     <span id="csharp" class="foo white">C Language</span>
@@ -145,7 +146,9 @@
                     <div id="demo"></div>
                 </div>
             </div>
-            <div class="contact">
+			
+			
+            <div class="contact" id="contact">
                 <div class="coo left">
                     <h1>QUICK ID</h1>
                     <table>
@@ -167,11 +170,11 @@
 						</tr>
                         <tr>
                             <th></th>
-                            <td>De Montfort Uninersity</td>
+                            <td>De Montfort University</td>
                         </tr>
                         <tr>
                             <th></th>
-                            <td>Leicestre</td>
+                            <td>Leicester</td>
                         </tr>
                         <tr>
                             <th></th>
@@ -182,26 +185,36 @@
                 <div class="coo right">
                     <h1>CONTACT ME</h1>
 					<form id="contact" action="" method="post">
-                    <fieldset class="inputWithIcon">
-                        <input type="text" placeholder="Your name" required>
-                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                    </fieldset>
-                    <fieldset class="inputWithIcon">
-                        <input type="email" placeholder="Email" required>
-                        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
-                    </fieldset>
-                    <fieldset class="inputWithIcon">
-                        <input type="text" id="text-area" placeholder="Your text" required>
-                        <i class="fa fa-pencil fa-lg fa-fw" aria-hidden="true"></i>
-                    </fieldset>
-					<fieldset>
-                        <input type="submit" value="SEND" id="submit"/>
+						<fieldset class="inputWithIcon">
+							<input type="text" placeholder="Your name" required>
+							<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+						</fieldset>
+						<fieldset class="inputWithIcon">
+							<input type="email" placeholder="Email" required>
+							<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+						</fieldset>
+						<fieldset class="inputWithIcon">
+							<input type="text" id="text-area" placeholder="Your text" required>
+							<i class="fa fa-pencil fa-lg fa-fw" aria-hidden="true"></i>
+						</fieldset>
+						<fieldset>
+							<input type="submit" value="SEND" id="submit"/>
 						</fieldset>
 					</form>
                 </div>
             </div>
+			
         </main>
         <footer>
+		
+		    <div class="footer-sitemap">
+				<ul>
+					<li class="site">SiteMap</li>
+					<li><a href="#profile">Profile<a></li>
+					<li><a href="#skills">Skills<a></li>
+					<li><a href="#contact">Contact<a></li>
+				</ul>
+			</div>
             <div class="footer-social-icons">
                 <h4 class="_14">Follow me on</h4>
                 <ul class="social-icons">
