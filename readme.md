@@ -1,3 +1,9 @@
-## Portfolio | CV Website
-this is my website for front end website devlopment project 
-Portfolio | CV Website
+## Portfolio | Resume website
+Nilesh Odedara  P15216326
+
+### Module Information
+ - CTEC3905 Frontend Development
+ - Dave Everitt & Fania Raczinski
+
+
+#### 3. Initial Designs (Wireframes Hand Drawn
