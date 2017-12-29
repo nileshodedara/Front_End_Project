@@ -5,7 +5,7 @@
   // which will handle the API call
   let xhr = new XMLHttpRequest();
   // console.log(`Current readyState: ${xhr.readyState}`);
-
+//creats objects for each call
   let queryBox = document.getElementById("wikiQuery");
   let searchForm = document.getElementById("searchForm");
   let demoJSON = document.getElementById("demo");
@@ -189,3 +189,4 @@ https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&pro
   }
 
 }());
+

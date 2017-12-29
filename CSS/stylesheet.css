@@ -302,9 +302,14 @@ input[type=text]:focus{
     border-color:dodgerBlue;
     box-shadow:0 0 8px 0 dodgerBlue;
 }
+
+input[type=email]:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
  
 /*this styles applies to the font awesome icons of the contact me form  */ 
-.inputWithIcon input[type=text],[type=email]{padding-left:40px;}
+.inputWithIcon input[type=text], input[type=email]{padding-left:40px;}
   
 .inputWithIcon{position:relative;}
   
@@ -317,7 +322,8 @@ input[type=text]:focus{
     transition:.3s;
 }
   
-.inputWithIcon input[type=text]:focus + i{color:dodgerBlue;}
+.inputWithIcon input[type=email]:focus + i{color:dodgerBlue;}
+input[type=text]:focus + i{color:dodgerBlue;}
  
 /*this styles applies to the submit button of the contact me form  */ 
 input[type=submit] {
@@ -346,14 +352,13 @@ footer {
 }
 
 .footer-sitemap{
-	width:10%;
+	width:40%;
 	margin-left:5%;
 	display:block;
-	padding-top:2%;
 	position:relative;
 }
 
-.footer-sitemap ul li{	padding-top:1%;}
+.sitemap ul li{	padding-top:1%;}
 
 a:link {
     text-decoration: none;
@@ -364,21 +369,25 @@ a:link {
 	font-weight:bold;
 	font-size:20px;
 }
-
-.footer-social-icons {
-    width: 20%;
-    display:block;
-    margin: 0 auto;
-    margin-right:5%;
-    padding-bottom:2%;
-	margin-top:-8%;
-	
-}
-
 .footer{
 	float:left;
 	display:block;
+	margin-left:2%;
+	padding-top:1%;
+	
 }
+
+.social-icons {
+    width: 70%;
+    display:block;
+    margin: 0 auto;
+    margin-right:5%;
+    padding-bottom:1%;
+    float:right;
+	text-align:center;
+}
+
+
 /*style for displying social media icons using font awesome*/
 .social-icon > h1,
 h2,
